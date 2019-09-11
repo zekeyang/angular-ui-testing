@@ -1,0 +1,50 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<button ibmButton>hi</button>
+
+<ibm-structured-list [border]="border" [condensed]="condensed" [nowrap]="nowrap">
+				<ibm-list-header>
+					<ibm-list-column nowrap="true">Name</ibm-list-column>
+					<ibm-list-column nowrap="true">Project</ibm-list-column>
+					<ibm-list-column>Skills</ibm-list-column>
+				</ibm-list-header>
+				<ibm-list-row>
+					<ibm-list-column>John Doe</ibm-list-column>
+					<ibm-list-column nowrap="true">Row One</ibm-list-column>
+					<ibm-list-column>
+						Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Nunc dui magna,
+						finibus id tortor sed, aliquet bibendum augue.
+						Aenean posuere sem vel euismod dignissim. Nulla ut cursus dolor.
+						Pellentesque vulputate nisl a porttitor interdum.
+					</ibm-list-column>
+				</ibm-list-row>
+				<ibm-list-row>
+					<ibm-list-column>Row 2</ibm-list-column>
+					<ibm-list-column nowrap="true">Row Two</ibm-list-column>
+					<ibm-list-column>
+						Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Nunc dui magna,
+						finibus id tortor sed, aliquet bibendum augue.
+						Aenean posuere sem vel euismod dignissim. Nulla ut cursus dolor.
+						Pellentesque vulputate nisl a porttitor interdum.
+					</ibm-list-column>
+				</ibm-list-row>
+			</ibm-structured-list>
+
+<br/>
+			<ibm-content-switcher (selected)="selected($event)">
+				<button ibmContentOption name="First">By People</button>
+				<button ibmContentOption name="Second">By Projects</button>
+			</ibm-content-switcher>
+
+<br/>
+
+
+		<p style="margin-top: 20px;">Without initial value</p>
+		<ibm-date-picker></ibm-date-picker>
+
+
